@@ -1,0 +1,6 @@
+import './main.scss'
+
+import { Game } from './core/Game.js';
+
+const game = new Game();
+game.start()
