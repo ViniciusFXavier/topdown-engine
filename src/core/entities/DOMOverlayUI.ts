@@ -14,6 +14,10 @@ export class DOMOverlayUI extends Entity {
     super(opts);
     this.container = opts.container;
 
+    this.createElements();
+  }
+
+  private createElements() {
     this.app = document.createElement('div');
     this.app.id = 'app';
     this.container.appendChild(this.app);
